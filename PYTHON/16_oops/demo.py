@@ -1,7 +1,7 @@
 # OOP - Object Oriented Programming 
 
-# Class - Blue Print 
-
+# Class - Blue Print/template
+# Class with Variables 
 class Student:
 #Students has Something-characteristics/properties(VARIABLES)
  student_name="Swarna"
@@ -21,7 +21,8 @@ print("Student Email:",student_object.student_email)
 print("=" * 50)
 
 # Class - Blue Print 
-
+#Adding a Method 
+#Methods represent behaviors
 class Student:
     
     # Student Has Something - Characteristics / Properties (VARIABLES)
@@ -29,7 +30,7 @@ class Student:
     student_email = "kirthana@gmail.com"
     
     # Student Does Something - Behaviors / Actions (METHODS)
-    def student_studies(self): # passed "self" nothing but object reference 
+    def student_studies(self): # passed "self" nothing but object reference #self=current object
         print("Student Is Studying Python")
         
 # To Use this class, object is required 
@@ -42,7 +43,7 @@ student_object.student_studies()
 
 print("=" * 50)
 # Class - Blue Print 
-
+# Accessing Variables using self 
 class Student:
     
     # Student Has Something - Characteristics / Properties (VARIABLES)
@@ -106,6 +107,7 @@ student_mike = Student()
 student_mike.student_studies() 
 
 print("=" * 50)
+# Constructor (init) 
 # Working With Multiple Objects Using Constructor i.e __init__() method
 
 class Student:
@@ -135,6 +137,7 @@ student_mike.student_studies()
 
 print("=" * 50)
 
+# Constructor (init) 
 # Working With Instance Members 
 class Student:
     
@@ -142,8 +145,8 @@ class Student:
     def __init__(self,student_name,student_email):
         print("Constructor Called")
         # Instance Variables self.student_name & self.student_email
-        self.student_name = student_name
-        self.student_email = student_email
+        self.student_name = student_name #Instance Variable
+        self.student_email = student_email#Instance Variable
         
     
     # Student Does Something - Behaviors / Actions (METHODS)
